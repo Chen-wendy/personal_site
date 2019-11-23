@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/parallex.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
   </head>
 
@@ -22,7 +23,17 @@
       </nav>
     </header>
 
-    <section class="content"></section>
+    <section class="content">
+      <section class="a">
+        <div class="texts"></div>
+      </section>
+      <section class="b">
+        <div class="texts"></div>
+      </section>
+      <section class="c">
+        <div class="texts"></div>
+      </section>
+    </section>
 
     <footer>
       <p class="copyright-notice">Copyright © 2019 陳秋樺 保留一切權利。</p>
@@ -37,5 +48,20 @@
         <li>GitHub</li>
       </ul>
     </aside>
+
+    <script>
+      document.querySelectorAll(".texts").forEach(
+        el =>
+          (el.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere facilisis lorem sit amet accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque mattis tristique imperdiet. Vivamus lacinia, velit nec tempor tempor, erat nisl vehicula augue, ullamcorper fermentum turpis justo sed ante. Vivamus consequat est quis efficitur varius. Vestibulum a tincidunt massa. Sed venenatis nibh varius, gravida purus vitae, lobortis mauris. Praesent id urna quis arcu semper sollicitudin eget at eros. Quisque ut accumsan nisi. Mauris commodo nunc non consequat suscipit. Sed et nibh tellus. Curabitur dapibus dictum velit sed rhoncus. Phasellus interdum, diam vitae luctus mattis, neque magna tempus ligula, nec vestibulum tellus elit vitae turpis. Nullam non turpis et tortor tempus molestie pulvinar eu elit. Ut tincidunt nibh ut erat sodales lacinia.
+
+Phasellus et lorem sagittis, bibendum nisi ut, eleifend nunc. Vivamus dictum neque vel varius semper. Pellentesque libero odio, bibendum eget ullamcorper vel, ornare ac diam. Phasellus est lectus, ornare vel neque id, commodo tristique ipsum. Sed id laoreet nisl, nec consectetur augue. Pellentesque eu tellus et mi hendrerit vestibulum vitae id justo. Morbi sit amet tellus rhoncus, ornare magna ut, venenatis lacus. Nulla gravida sollicitudin ex id consectetur. Vivamus est nisl, sodales ac nulla eu, efficitur consequat lorem. Curabitur sit amet erat quis magna fermentum vehicula. Cras vel augue dapibus, sagittis nunc vitae, mollis lacus.
+
+Nunc ultrices, elit a vehicula commodo, urna massa lacinia justo, in ultricies justo lacus id massa. Suspendisse nulla mi, egestas ac risus nec, egestas feugiat turpis. Curabitur a scelerisque lacus. Praesent sem nulla, lobortis sagittis nunc at, feugiat porta neque. Quisque viverra ex eu feugiat rutrum. Duis dictum at augue a ultrices. Nulla eget nunc eget purus imperdiet mattis. Vestibulum velit quam, pharetra sed eros at, gravida semper mi.
+
+Nullam elementum sollicitudin tincidunt. Nulla dignissim leo ante. Cras elementum lorem viverra viverra tristique. Integer augue odio, rhoncus non gravida in, tempor nec neque. Nullam convallis pharetra tellus, a venenatis arcu interdum id. Fusce tempus a enim id ultrices. Mauris dignissim dolor non ornare pellentesque. Aliquam ac euismod elit.
+
+Maecenas iaculis augue quis leo sagittis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum mollis odio at leo porttitor, non tempor risus ornare. Mauris eu pulvinar libero. Donec sagittis ut enim eget finibus. Suspendisse enim justo, ultricies eu felis eget, tincidunt mollis tortor. Fusce auctor eros sed est tristique volutpat. Sed vestibulum, massa nec bibendum vestibulum, justo mauris mollis est, a hendrerit mi libero id risus. Vivamus sollicitudin congue consequat. Nulla dignissim euismod erat, vitae pretium nisi varius lacinia. Nunc laoreet sit amet dui vel dictum. Donec vestibulum elit sed lorem sodales lobortis.`)
+      );
+    </script>
   </body>
 </html>

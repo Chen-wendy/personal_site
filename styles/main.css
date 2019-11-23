@@ -47,7 +47,7 @@ header > h1 {
 }
 
 section.content {
-  min-height: calc(150vh - 10em);
+  min-height: calc(100vh - 10em);
 }
 
 footer {

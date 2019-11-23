@@ -1,0 +1,46 @@
+section.content {
+  position: relative;
+  perspective: 1px;
+}
+
+.a,
+.b,
+.c {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.a,
+.c {
+  color: white;
+}
+
+.texts {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+
+  padding: 1.5rem;
+}
+
+.b {
+  height: 15em;
+}
+
+.a {
+  padding-top: calc(100% / 1920 * 1280 - 7rem);
+  background-image: url("/assets/images/backgrounds/leaves-hang-on-rope-1389460.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.c {
+  padding-top: calc(100% / 1920 * 1280);
+  background-image: url("/assets/images/backgrounds/close-up-photo-of-wooden-scrabble-tiles-near-heart-776636.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
