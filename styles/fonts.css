@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "WindyRainDemo";
+  src: url("/assets/fonts/WindyRainDemo.woff") format("woff"),
+    url("/assets/fonts/WindyRainDemo.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
+}

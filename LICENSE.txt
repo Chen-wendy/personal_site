@@ -1,0 +1,39 @@
+# Styles
+
+## Meyer CSS Resets
+https://meyerweb.com/eric/tools/css/reset/
+
+# Fonts
+
+## Windy Rain
+
+https://www.fontspace.com/roland-huse-design/windy-rain-demo
+
+WINDY RAIN is the clean version of my first handwritten calligraphy font "Rainy Wind".
+
+Please note that this is my first attempt to create cyrillic handwritten fonts they may not be perfect in appearance, legiblility and kerning. Therefore all feedback and help yould be greatly appreciated for future development on this font.
+
+This font is a DEMO version and free for PERSONAL use only. For any commercial use (anything you make money from), you must send a paypal donation to myhandwritings@gmail.com.
+
+For full version please contact me via myhandwritings@gmail.com
+also about the following:
+-This family does not contain all the language extensions, but I am willing to create any extensions  on request
+- Discovering kerning problems while using 
+- Problems with cyrillic handwritten fonts (since that this is my first attempt)
+- Or any other question or feedback. 
+
+You MAY NOT sell my fonts or claim them as your own.
+You MAY NOT edit or rename my fonts.
+
+You MAY redistribute my fonts if:
+1. You credit me (Roland Huse).
+2. Keep the READ ME file intact within the zip folder.
+3. Provide a link back to my website (www.rolandhuse.com).
+
+Thank you & I hope you like this font,
+
+Cheers,
+Roland
+
+http://www.rolandhuse.com
+https://www.facebook.com/pages/Runes-And-Fonts/123221817784772
