@@ -1,0 +1,24 @@
+.social-item i {
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+
+  transition: 0.25s linear;
+}
+
+.facebook.social-item:hover {
+  color: #4267b2;
+}
+
+.instagram.social-item:hover {
+  color: #833ab4;
+}
+.mail.social-item:hover {
+  color: #db4437;
+}
+.phone.social-item:hover {
+  color: #fad7bd;
+}
+.map.social-item:hover {
+  color: black;
+}

@@ -6,8 +6,14 @@
 
     <link rel="stylesheet" href="styles/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/parallex.css" />
+    <link rel="stylesheet" href="styles/content.css" />
+    <link rel="stylesheet" href="styles/aside.css" />
+    <link rel="stylesheet" href="styles/backgrounds.css" />
     <link rel="stylesheet" href="styles/fonts.css" />
+    <script
+      src="https://kit.fontawesome.com/0adb492c12.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -16,6 +22,7 @@
       <nav class="navigation">
         <menu>
           <li><a href="#profile">個人資料</a></li>
+          <li><a href="#interest">興趣</a></li>
           <li><a href="#experience">經歷</a></li>
           <li><a href="#life">生活</a></li>
           <li><a href="#future">未來</a></li>
@@ -24,16 +31,96 @@
     </header>
 
     <section class="content">
-      <section class="a">
-        <div class="texts"></div>
-      </section>
-      <section class="b">
-        <div class="texts"></div>
-      </section>
-      <section class="c">
-        <div class="texts"></div>
-      </section>
+      <div class="hero"></div>
+      <div class="container">
+        <section class="motto">
+          <blockquote>
+            <h2>座右銘：</h2>
+            <p>
+              「自信是成功的前提，勤奮是成功的催化劑。」
+            </p>
+          </blockquote>
+        </section>
+
+        <section id="profile" class="profile">
+          <img src="assets/images/pictures/avatar.jpeg" />
+          <ul>
+            <li>
+              <i class="fas fa-fw fa-signature"></i><label>姓名：</label>陳秋樺
+            </li>
+            <li>
+              <i class="fas fa-fw fa-user-tag"></i
+              ><label>綽號：</label>小秋／Ｗendy
+            </li>
+            <li>
+              <i class="fas fa-fw fa-star"></i><label>星座：</label>雙魚座
+            </li>
+            <li>
+              <i class="fas fa-fw fa-home"></i><label>家鄉：</label>雲林縣
+            </li>
+            <li>
+              <i class="far fa-fw fa-lightbulb"></i
+              ><label>個性：</label>積極、樂觀、認真
+            </li>
+            <li>
+              <i class="fas fa-fw fa-heart"></i><label>特性：</label>自由愛好者
+            </li>
+          </ul>
+        </section>
+
+        <h2 class="interest" id="interest">
+          <i class="fas fa-fw fa-heart"></i>我的興趣
+        </h2>
+        <div class="intereset-header-spacer"></div>
+
+        <section class="interest">
+          <ul>
+            <li>
+              <div class="aspect-ratio-wrapper">
+                <figure>
+                  <img src="https://via.placeholder.com/400x300" />
+                  <figcaption>
+                    我希歡追星，只要有明星辦簽唱會，我都會去看。
+                  </figcaption>
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div class="aspect-ratio-wrapper">
+                <figure>
+                  <img src="https://via.placeholder.com/400x300" />
+                  <figcaption>
+                    我喜歡旅遊，放假時，我會安排一些旅程到處走走，讓自己放鬆一下。
+                  </figcaption>
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div class="aspect-ratio-wrapper">
+                <figure>
+                  <img src="https://via.placeholder.com/400x300" />
+                  <figcaption>
+                    我希歡挑戰極限運動，讓自己變得更勇敢更有勇氣。
+                  </figcaption>
+                </figure>
+              </div>
+            </li>
+            <li>
+              <div class="aspect-ratio-wrapper">
+                <figure>
+                  <img src="https://via.placeholder.com/400x300" />
+                  <figcaption>
+                    我喜歡和朋友去唱歌，讓心情舒壓一下。
+                  </figcaption>
+                </figure>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
     </section>
+
+    <section class="education"></section>
 
     <footer>
       <p class="copyright-notice">Copyright © 2019 陳秋樺 保留一切權利。</p>
@@ -41,27 +128,22 @@
 
     <aside class="right">
       <ul class="contact-information">
-        <li>Instagram</li>
-        <li>Twitter</li>
-        <li>Facebook</li>
-        <li>LinkedIn</li>
-        <li>GitHub</li>
+        <li class="facebook social-item">
+          <a><i class="fab fa-fw fa-facebook-square"></i></a>
+        </li>
+        <li class="instagram social-item">
+          <a><i class="fab fa-fw fa-instagram"></i></a>
+        </li>
+        <li class="mail social-item">
+          <a><i class="fas fa-fw fa-inbox"></i></a>
+        </li>
+        <li class="phone social-item">
+          <a><i class="fas fa-fw fa-mobile-alt"></i></a>
+        </li>
+        <li class="map social-item">
+          <a><i class="fas fa-fw fa-map-marked"></i></a>
+        </li>
       </ul>
     </aside>
-
-    <script>
-      document.querySelectorAll(".texts").forEach(
-        el =>
-          (el.textContent = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse posuere facilisis lorem sit amet accumsan. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque mattis tristique imperdiet. Vivamus lacinia, velit nec tempor tempor, erat nisl vehicula augue, ullamcorper fermentum turpis justo sed ante. Vivamus consequat est quis efficitur varius. Vestibulum a tincidunt massa. Sed venenatis nibh varius, gravida purus vitae, lobortis mauris. Praesent id urna quis arcu semper sollicitudin eget at eros. Quisque ut accumsan nisi. Mauris commodo nunc non consequat suscipit. Sed et nibh tellus. Curabitur dapibus dictum velit sed rhoncus. Phasellus interdum, diam vitae luctus mattis, neque magna tempus ligula, nec vestibulum tellus elit vitae turpis. Nullam non turpis et tortor tempus molestie pulvinar eu elit. Ut tincidunt nibh ut erat sodales lacinia.
-
-Phasellus et lorem sagittis, bibendum nisi ut, eleifend nunc. Vivamus dictum neque vel varius semper. Pellentesque libero odio, bibendum eget ullamcorper vel, ornare ac diam. Phasellus est lectus, ornare vel neque id, commodo tristique ipsum. Sed id laoreet nisl, nec consectetur augue. Pellentesque eu tellus et mi hendrerit vestibulum vitae id justo. Morbi sit amet tellus rhoncus, ornare magna ut, venenatis lacus. Nulla gravida sollicitudin ex id consectetur. Vivamus est nisl, sodales ac nulla eu, efficitur consequat lorem. Curabitur sit amet erat quis magna fermentum vehicula. Cras vel augue dapibus, sagittis nunc vitae, mollis lacus.
-
-Nunc ultrices, elit a vehicula commodo, urna massa lacinia justo, in ultricies justo lacus id massa. Suspendisse nulla mi, egestas ac risus nec, egestas feugiat turpis. Curabitur a scelerisque lacus. Praesent sem nulla, lobortis sagittis nunc at, feugiat porta neque. Quisque viverra ex eu feugiat rutrum. Duis dictum at augue a ultrices. Nulla eget nunc eget purus imperdiet mattis. Vestibulum velit quam, pharetra sed eros at, gravida semper mi.
-
-Nullam elementum sollicitudin tincidunt. Nulla dignissim leo ante. Cras elementum lorem viverra viverra tristique. Integer augue odio, rhoncus non gravida in, tempor nec neque. Nullam convallis pharetra tellus, a venenatis arcu interdum id. Fusce tempus a enim id ultrices. Mauris dignissim dolor non ornare pellentesque. Aliquam ac euismod elit.
-
-Maecenas iaculis augue quis leo sagittis egestas. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum mollis odio at leo porttitor, non tempor risus ornare. Mauris eu pulvinar libero. Donec sagittis ut enim eget finibus. Suspendisse enim justo, ultricies eu felis eget, tincidunt mollis tortor. Fusce auctor eros sed est tristique volutpat. Sed vestibulum, massa nec bibendum vestibulum, justo mauris mollis est, a hendrerit mi libero id risus. Vivamus sollicitudin congue consequat. Nulla dignissim euismod erat, vitae pretium nisi varius lacinia. Nunc laoreet sit amet dui vel dictum. Donec vestibulum elit sed lorem sodales lobortis.`)
-      );
-    </script>
   </body>
 </html>
