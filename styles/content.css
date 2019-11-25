@@ -67,6 +67,17 @@ section.profile {
 
 section.interest {
   margin-right: 96px;
+  position: relative;
+}
+
+.interest .backdrop-filter {
+  position: absolute;
+  top: -48px;
+  bottom: 0;
+  left: -100vh;
+  right: -100vh;
+  -webkit-backdrop-filter: blur(2px);
+  background: rgba(72, 72, 72, 0.41);
 }
 
 .intereset-header-spacer {
@@ -98,6 +109,9 @@ h2.interest {
   position: relative;
   /* padding-top: calc((50% - 4px) / 400 * 300 + 64px); */
   padding-top: calc((50% - 4px) / 400 * 300);
+  box-sizing: border-box;
+  border: 4px solid white;
+  border-radius: 4px;
 }
 
 .interest li:nth-child(2n) {
@@ -125,6 +139,68 @@ div.aspect-ratio-wrapper {
   right: 0;
   bottom: 0;
   /* bottom: 64px; */
+
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.interest figcaption {
+  padding: 1rem;
+  background-color: rgba(75, 80, 67, 0.75);
+  color: white;
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: 32px;
+}
+
+.education-section-spacer {
+}
+
+section.education {
+  position: absolute;
+  left: 0;
+  right: 0;
+  background-color: red;
+}
+
+.education ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.education li {
+  width: calc(50% - 4px);
+  margin-right: 8px;
+  margin-bottom: 8px;
+  position: relative;
+  padding-top: calc((50% - 4px) / 400 * 300);
+}
+
+.education li:nth-child(2n) {
+  margin-right: 0;
+}
+
+.education figure {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.education img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 
   max-width: 100%;
   max-height: 100%;
