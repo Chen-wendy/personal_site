@@ -1,0 +1,27 @@
+.album .prev {
+    position: fixed;
+    font-size: 128px;
+    top: calc(50vh - 64px);
+    left: 64px;
+}
+
+.album .next {
+    position: fixed;
+    font-size: 128px;
+    top: calc(50vh - 64px);
+    right: 64px;
+}
+
+.album button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.album .view {
+    width: 60vw;
+    height: 60vh;
+    object-fit: contain;
+}

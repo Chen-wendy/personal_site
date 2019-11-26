@@ -34,3 +34,53 @@ document
             )
             .openOn(map);
     });
+
+const lifeAlbum = new album.Album([
+    "assets/images/pictures/life/life1.jpg",
+    "assets/images/pictures/life/life2.jpg",
+    "assets/images/pictures/life/life3.jpg",
+    "assets/images/pictures/life/life4.jpg",
+    "assets/images/pictures/life/life5.jpg",
+    "assets/images/pictures/life/life6.jpg"
+]);
+
+const campAlbum = new album.Album([
+    "assets/images/pictures/groups/camp1.jpg",
+    "assets/images/pictures/groups/camp2.jpg",
+    "assets/images/pictures/groups/camp3.jpg",
+    "assets/images/pictures/groups/camp4.jpg",
+    "assets/images/pictures/groups/camp5.jpg",
+    "assets/images/pictures/groups/camp6.jpg"
+]);
+
+const clubAlbum = new album.Album([
+    "assets/images/pictures/groups/club1.jpg",
+    "assets/images/pictures/groups/club2.jpg",
+    "assets/images/pictures/groups/club3.jpg",
+    "assets/images/pictures/groups/club4.jpg",
+    "assets/images/pictures/groups/club5.jpg",
+    "assets/images/pictures/groups/club6.jpg"
+]);
+
+document.querySelectorAll("section.life li.photo").forEach(function(el, index) {
+    el.addEventListener("click", function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+
+        lifeAlbum.attach(index);
+    });
+});
+
+document.querySelector("#camp-button").addEventListener("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    campAlbum.attach();
+});
+
+document.querySelector("#club-button").addEventListener("click", function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    clubAlbum.attach();
+});

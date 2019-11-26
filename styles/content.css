@@ -435,11 +435,41 @@ section.future .text-container {
 .album .photo {
     width: calc(50% - 4px);
     margin-bottom: 8px;
+    position: relative;
+    padding-top: calc((50% - 4px) * 0.75);
 }
 .album .photo img {
     max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .album .photo:nth-child(2n + 1) {
     margin-right: 8px;
+}
+
+.album .photo.can-enlarge::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-top-left-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.5);
+    content: "點擊看大圖";
+    padding: 8px 6px 6px 10px;
+    color: white;
+    font-size: 0.75rem;
+}
+
+#club-button,
+#camp-button {
+    margin-top: 20px;
+    border: 0;
+    background-color: rgba(202, 5, 77, 0.5);
+    padding: 12px 24px;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
 }

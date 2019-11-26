@@ -37,7 +37,6 @@
     class Modal {
         constructor(template) {
             this.id = createRandomId();
-            instances.push(this);
             this.template = template;
         }
         attach() {
@@ -46,11 +45,12 @@
                 `<div class="modal" id="${this.id}">${this.template}</div>`
             );
             this.ref = getContainer().querySelector(`#${this.id}`);
+            instances.push(this);
         }
         destroy() {
+            instances.splice(instances.indexOf(this), 1);
             this.ref.remove();
             this.ref = undefined;
-            instances.splice(instances.indexOf(this), 1);
         }
     }
 
