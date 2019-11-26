@@ -1,7 +1,6 @@
 (function(modal) {
     function createRandomId() {
-        const charSet =
-            "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        const charSet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
         return [0, 1, 2, 3, 4, 5, 6, 7]
             .map(function() {
                 return charSet.charAt(
