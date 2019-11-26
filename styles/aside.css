@@ -6,19 +6,19 @@
     transition: 0.25s linear;
 }
 
-.facebook.social-item:hover {
-    color: #4267b2;
+.facebook.social-item:hover i {
+    color: #4267b2 !important;
 }
 
-.instagram.social-item:hover {
-    color: #833ab4;
+.instagram.social-item:hover i {
+    color: #833ab4 !important;
 }
-.mail.social-item:hover {
-    color: #db4437;
+.mail.social-item:hover i {
+    color: #db4437 !important;
 }
-.phone.social-item:hover {
-    color: #fad7bd;
+.phone.social-item:hover i {
+    color: #fad7bd !important;
 }
-.map.social-item:hover {
-    color: black;
+.map.social-item:hover i {
+    color: black !important;
 }

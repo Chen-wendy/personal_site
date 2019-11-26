@@ -24,13 +24,13 @@
                     <li><a href="#profile">個人資料</a></li>
                     <li><a href="#interest">興趣</a></li>
                     <li><a href="#experience">經歷</a></li>
-                    <li><a href="#life">生活</a></li>
+                    <!-- <li><a href="#life">生活</a></li> -->
                     <li><a href="#future">未來</a></li>
                 </menu>
             </nav>
         </header>
 
-        <section class="content">
+        <div class="content">
             <div class="hero"></div>
             <div class="container">
                 <section class="motto">
@@ -76,9 +76,9 @@
                     <i class="fas fa-fw fa-heart"></i>我的興趣
                 </h2>
                 <div class="intereset-header-spacer"></div>
+                <div class="interest-backdrop-filter"></div>
 
                 <section class="interest">
-                    <div class="backdrop-filter"></div>
                     <ul>
                         <li>
                             <div class="aspect-ratio-wrapper">
@@ -130,27 +130,184 @@
                         </li>
                     </ul>
                 </section>
-            </div>
-
-            <div class="education-section-spacer"></div>
-            <section class="education">
-                <ul>
-                    <li>
-                        <div class="aspect-ratio-wrapper">
+                <section id="experience" class="education">
+                    <p class="header-icon-container">
+                        <i class="fas fa-graduation-cap"></i>
+                    </p>
+                    <h2>教育經歷</h2>
+                    <ul>
+                        <li class="school">
                             <figure>
-                                <img src="https://via.placeholder.com/80x80" />
+                                <img
+                                    src="/assets/images/pictures/education_emblems/elementary.png"
+                                />
                                 <figcaption>
-                                    雲林縣新生國小<br />
-                                    2004 年 8 月～2010 年 6 月
+                                    <span class="location">雲林縣</span>
+                                    <span class="school">新生國小</span><br />
+                                    <span class="graduated">2010 年畢業</span>
                                 </figcaption>
                             </figure>
-                        </div>
-                    </li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
+                        </li>
+                        <li class="arrow">
+                            <i class="far fa-chevron-right"></i>
+                        </li>
+                        <li class="school">
+                            <figure>
+                                <img
+                                    src="/assets/images/pictures/education_emblems/junior.png"
+                                />
+                                <figcaption>
+                                    <span class="location">雲林縣</span>
+                                    <span class="school">土庫國中</span><br />
+                                    <span class="graduated">2013 年畢業</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="arrow">
+                            <i class="far fa-chevron-right"></i>
+                        </li>
+                        <li class="school">
+                            <figure>
+                                <img
+                                    src="/assets/images/pictures/education_emblems/junior_college.png"
+                                />
+                                <figcaption>
+                                    <span class="location">新北市</span>
+                                    <span class="school">馬偕護專</span><br />
+                                    <span class="graduated">2018 年畢業</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li class="arrow">
+                            <i class="far fa-chevron-right"></i>
+                        </li>
+                        <li class="school">
+                            <figure>
+                                <img
+                                    src="/assets/images/pictures/education_emblems/university.png"
+                                />
+                                <figcaption>
+                                    <span class="location">桃園市</span>
+                                    <span class="school">中原大學</span><br />
+                                    <span class="graduated">修業中</span>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <div class="education-section-spacer"></div>
+                <div class="work-background">
+                    <section class="work">
+                        <p class="header-icon-container">
+                            <i class="fas fa-suitcase"></i>
+                        </p>
+                        <h2>工作經驗</h2>
+                        <ul>
+                            <li
+                                style="background-color: rgba(41, 29, 76, 0.5); color: #c9f227;"
+                            >
+                                <img
+                                    src="assets/images/pictures/work/waitperson.jpg"
+                                />
+                                <div class="description">
+                                    <p>
+                                        在朱記餡餅粥擔任外場服務生，主要工作是點餐、送餐、收餐、清潔
+                                    </p>
+                                    <h3>感想</h3>
+                                    <p>
+                                        學習到餐廳的作業程序及如何應對客人等。
+                                    </p>
+                                </div>
+                            </li>
+                            <li
+                                style="background-color: rgba(4, 32, 101, 0.5); color: #dcc6e0;"
+                            >
+                                <img
+                                    src="assets/images/pictures/work/convenience_store.jpg"
+                                />
+                                <div class="description">
+                                    <p>
+                                        在統一超商擔任銷售員，主要工作是結帳、補貨、訂貨。
+                                    </p>
+                                    <h3>感想</h3>
+                                    <p>
+                                        認識大型企業的升遷管道、各項操作的標準作業程序以及資訊系統的使用。
+                                    </p>
+                                </div>
+                            </li>
+                            <li
+                                style="background-color: rgba(13, 78, 92, 0.5); color: #c5eff7;"
+                            >
+                                <img
+                                    src="assets/images/pictures/work/english_teaching.jpg"
+                                />
+                                <div class="description">
+                                    <p>
+                                        在三芝國小擔任英文實習老師，主要工作內容是教國小生英文。
+                                    </p>
+                                    <h3>感想</h3>
+                                    <p>
+                                        學會編寫教案並依照各個班級的學生程度在教案上以及教學時進行調整。
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="groups">
+                        <p class="header-icon-container">
+                            <i class="fas fa-users"></i>
+                        </p>
+                        <h2>社團及營隊</h2>
+                        <ul>
+                            <li
+                                style="background-color: rgba(41, 29, 76, 0.5); color: #c9f227;"
+                            >
+                                <div class="description">
+                                    <p>
+                                        參加菁英領袖營，主要的活動是認識彼此的文化及認識新朋友，以及聆聽專業的講座。
+                                    </p>
+                                </div>
+                                <img
+                                    src="assets/images/pictures/groups/camp.jpg"
+                                />
+                            </li>
+                            <li
+                                style="background-color: rgba(4, 32, 101, 0.5); color: #dcc6e0;"
+                            >
+                                <div class="description">
+                                    <p>
+                                        參加慈暉社，主要的活動是帶小朋友參加營隊，藉此讓小朋友學習新知識及體驗團康遊戲。
+                                    </p>
+                                </div>
+                                <img
+                                    src="assets/images/pictures/groups/club.jpg"
+                                />
+                            </li>
+                        </ul>
+                    </section>
+                    <div
+                        style="height: 48px; background-image: linear-gradient(rgba(152, 166, 212, 0), rgba(152, 166, 212, 1));"
+                    ></div>
+                </div>
+            </div>
+            <div class="work-background-spacer"></div>
+        </div>
+
+        <section id="future" class="future" style="padding-top: 16px;">
+            <p
+                class="header-icon-container"
+                style="margin-top: 0; color: #c30a50;"
+            >
+                <i class="far fa-lightbulb"></i>
+            </p>
+            <h2>未來展望及自我期許</h2>
+            <div class="text-container">
+                <p>
+                    希望在大學這四年中，我的英文能力能進步；也希望我拿到許多專業證照。<br />
+                    此外，更希望我能擴展人脈關係，交到許多朋友。<br />
+                    我的目標是畢業後，在一家大公司擔任一位有能力的幹部。或者，考上公職考試，得到一份安穩的工作。<br />
+                </p>
+            </div>
         </section>
 
         <footer>
@@ -162,19 +319,31 @@
         <aside class="right">
             <ul class="contact-information">
                 <li class="facebook social-item">
-                    <a><i class="fab fa-fw fa-facebook-square"></i></a>
+                    <a
+                        href="https://www.facebook.com/profile.php?id=100006571213446"
+                        ><i class="fab fa-fw fa-facebook-square"></i
+                    ></a>
                 </li>
                 <li class="instagram social-item">
-                    <a><i class="fab fa-fw fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/bnm95327/"
+                        ><i class="fab fa-fw fa-instagram"></i
+                    ></a>
                 </li>
                 <li class="mail social-item">
-                    <a><i class="fas fa-fw fa-inbox"></i></a>
+                    <a href="mailto:bnm95327@gmail.com"
+                        ><i class="fas fa-fw fa-inbox"></i
+                    ></a>
                 </li>
                 <li class="phone social-item">
-                    <a><i class="fas fa-fw fa-mobile-alt"></i></a>
+                    <a href="tel:0912345678"
+                        ><i class="fas fa-fw fa-mobile-alt"></i
+                    ></a>
                 </li>
                 <li class="map social-item">
-                    <a><i class="fas fa-fw fa-map-marked"></i></a>
+                    <a
+                        href="https://www.google.com/maps/place/中原大學/@24.957537,121.2388275,17z/data=!3m1!4b1!4m5!3m4!1s0x3468221447a0f021:0x2b86d2650bb8bcff!8m2!3d24.957537!4d121.2410215"
+                        ><i class="fas fa-fw fa-map-marked"></i
+                    ></a>
                 </li>
             </ul>
         </aside>

@@ -41,12 +41,12 @@ section.motto {
 section.profile {
     margin-right: 96px;
     background-color: rgba(132, 132, 192, 0.8);
-    border-radius: 16px;
+    border-radius: 8px;
     display: flex;
     height: 180px;
     font-family: sans-serif;
 
-    color: #250902;
+    color: #150f1f;
 }
 .profile img {
     width: 135px;
@@ -69,12 +69,11 @@ section.interest {
     position: relative;
 }
 
-.interest .backdrop-filter {
+.interest-backdrop-filter {
     position: absolute;
-    top: -48px;
-    bottom: 0;
-    left: -100vh;
-    right: -100vh;
+    left: 0;
+    right: 0;
+    height: calc(48px + 100vw * 3 / 4);
     -webkit-backdrop-filter: blur(2px);
     background: rgba(72, 72, 72, 0.41);
 }
@@ -92,7 +91,7 @@ h2.interest {
     left: 0;
     right: 0;
     background-color: #261b38;
-    color: #b9baa3;
+    color: #d6d5c9;
     text-align: center;
 }
 
@@ -159,72 +158,146 @@ div.aspect-ratio-wrapper {
 }
 
 .education-section-spacer {
+    width: 1px;
+    height: calc(200px + 4.5rem + (100vw - 64px) * 0.16);
+}
+@media screen and (min-width: 864px) {
+    .education-section-spacer {
+        height: calc(200px + 4.5rem + 800px * 0.16);
+    }
+    .education .arrow {
+        line-height: calc(800px * 0.16) !important;
+        height: calc(800px * 0.16) !important;
+    }
 }
 
 section.education {
     position: absolute;
     left: 0;
     right: 0;
-    background-color: red;
+    margin-left: 0;
+    margin-right: 0;
+    background-image: linear-gradient(
+        rgba(82, 69, 134, 0.6) 0%,
+        rgba(82, 69, 134, 0.9) 90%,
+        rgba(82, 69, 134, 1) 100%
+    );
+    color: white;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+}
+
+.education .header-icon-container,
+.work .header-icon-container,
+.groups .header-icon-container,
+.future .header-icon-container {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    font-size: 40px;
+}
+.education h2,
+.work h2,
+.groups h2,
+.future h2 {
+    margin: 0 auto 16px auto;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .education ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: no-wrap;
-
-    max-width: 500px;
-    margin: 0 auto;
+    flex-wrap: nowrap;
+    margin: 0 32px 64px 32px;
+    max-width: 800px;
 }
 
-.education li {
-    width: calc(50% - 4px);
-    margin-right: 8px;
-    margin-bottom: 8px;
-    position: relative;
-    padding-top: calc((50% - 4px) / 400 * 300);
+.education .school {
+    width: 16%;
 }
-
-.education li:nth-child(2n) {
-    margin-right: 0;
+.education .arrow {
+    width: 12%;
+    text-align: center;
+    font-size: 24px;
+    line-height: calc((100vw - 64px) * 0.16);
+    height: calc((100vw - 64px) * 0.16);
 }
-
-.education figure {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
 .education img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
     max-width: 100%;
-    max-height: 100%;
+    margin-bottom: 8px;
+}
+.education figcaption {
+    text-align: center;
+    line-height: 1.5rem;
+}
+.education .graduated {
+    margin-top: 4px;
 }
 
-.interest figcaption {
-    padding: 1rem;
-    background-color: rgba(75, 80, 67, 0.75);
-    color: white;
-
+.work-background::before {
     position: absolute;
-
     left: 0;
     right: 0;
-    bottom: 0;
-
-    height: 32px;
+    margin: 0;
+    background-image: linear-gradient(
+            rgba(82, 69, 134, 1) 0%,
+            rgba(82, 69, 134, 0.6) 30%,
+            rgba(91, 82, 136, 0.1) 100%
+        ),
+        linear-gradient(
+            rgba(0, 0, 0, 0) 0%,
+            rgba(127, 127, 127, 0.3) 60%,
+            rgba(127, 127, 127, 0.5) 100%
+        ),
+        url("/assets/images/backgrounds/group-of-people-watching-on-laptop-1595385.jpg");
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top center;
+    height: 1364px;
+    content: " ";
+    z-index: -1;
+    background-size: 2421px;
+}
+.work-background {
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
 }
 
+@media screen and (min-width: 2421px) {
+    .work-background {
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 814px) {
+    .education figcaption span.location {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .interest-backdrop-filter {
+        height: calc(128px + 488px * 3 / 4);
+    }
+    .education-section-spacer {
+        height: calc(200px + 4.5rem + 536px * 0.16);
+    }
+    .education .arrow {
+        line-height: calc(536px * 0.16);
+        height: calc(536px * 0.16);
+    }
+}
 @media screen and (min-width: 832px) {
     section.motto,
     section.profile,
     section.interest {
         margin-right: 80 px;
+    }
+
+    .interest-backdrop-filter {
+        height: calc(128px + 704px * 3 / 4);
     }
 }
 
@@ -234,6 +307,13 @@ section.education {
     section.interest {
         margin-right: 64px;
     }
+
+    .interest-backdrop-filter {
+        height: calc(128px + 720px * 3 / 4);
+    }
+    .education ul {
+        margin: 0 auto 64px auto;
+    }
 }
 
 @media screen and (min-width: 896px) {
@@ -241,6 +321,10 @@ section.education {
     section.profile,
     section.interest {
         margin-right: 48px;
+    }
+
+    .interest-backdrop-filter {
+        height: calc(128px + 736px * 3 / 4);
     }
 }
 
@@ -250,6 +334,10 @@ section.education {
     section.interest {
         margin-right: 32px;
     }
+
+    .interest-backdrop-filter {
+        height: calc(128px + 752px * 3 / 4);
+    }
 }
 
 @media screen and (min-width: 960px) {
@@ -258,4 +346,71 @@ section.education {
     section.interest {
         margin-right: 16px; /* 768px */
     }
+
+    .interest-backdrop-filter {
+        height: calc(128px + 768px * 3 / 4);
+    }
+}
+
+section.work {
+    margin-top: 0;
+}
+
+section.work ul,
+section.groups ul {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+section.work li,
+section.groups li {
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+section.work li .description,
+section.groups li .description {
+    flex-grow: 1;
+    padding: 16px;
+    line-height: 1.5rem;
+    align-self: center;
+    margin-top: -12px;
+}
+
+section.work li .description h3,
+section.groups li .description h3 {
+    margin-top: 16px;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+section.work li img,
+section.groups li img {
+    max-height: 100%;
+}
+
+section.work li:not(:last-child),
+section.groups li:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.work-background-spacer {
+    height: 1364px;
+}
+
+section.future {
+    height: 400px;
+    background-color: rgb(152, 166, 212);
+    color: #232e21;
+}
+
+section.future .text-container {
+    height: calc(100% - 218px);
+    padding: 64px;
+    line-height: 2em;
+    font-size: 1.25em;
 }

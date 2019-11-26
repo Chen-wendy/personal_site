@@ -3,7 +3,8 @@
  */
 
 body {
-    background-color: #fce1f9;
+    background-color: #0d040c;
+    position: relative;
     min-height: 100%;
 }
 
@@ -61,11 +62,6 @@ footer {
     color: #b7beb8;
     height: 3em;
     background-color: #20242b;
-
-    /* position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0; */
 }
 
 .copyright-notice {
@@ -87,10 +83,20 @@ aside.right {
     color: #fdfdfd;
 }
 
+aside.right i {
+    color: #fdfdfd !important;
+}
+
 .contact-information > li {
     margin-bottom: 8px;
 }
 
 .contact-information > li:last-child {
     margin-bottom: 0;
+}
+
+.text-ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
