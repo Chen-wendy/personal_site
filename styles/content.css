@@ -103,7 +103,6 @@ h2.interest {
 
 .interest li {
     width: calc(50% - 4px);
-    margin-right: 8px;
     margin-bottom: 8px;
     position: relative;
     /* padding-top: calc((50% - 4px) / 400 * 300 + 64px); */
@@ -113,8 +112,8 @@ h2.interest {
     border-radius: 4px;
 }
 
-.interest li:nth-child(2n) {
-    margin-right: 0;
+.interest li:nth-child(2n + 1) {
+    margin-right: 8px;
 }
 
 div.aspect-ratio-wrapper {
@@ -190,7 +189,8 @@ section.education {
 .education .header-icon-container,
 .work .header-icon-container,
 .groups .header-icon-container,
-.future .header-icon-container {
+.future .header-icon-container,
+.life .header-icon-container {
     text-align: center;
     margin-top: 16px;
     margin-bottom: 8px;
@@ -199,7 +199,8 @@ section.education {
 .education h2,
 .work h2,
 .groups h2,
-.future h2 {
+.future h2,
+.life h2 {
     margin: 0 auto 16px auto;
     font-size: 1.5rem;
     text-align: center;
@@ -402,15 +403,43 @@ section.groups li:not(:last-child) {
     height: 1364px;
 }
 
-section.future {
-    height: 400px;
-    background-color: rgb(152, 166, 212);
-    color: #232e21;
+section.future,
+section.life {
+    background-image: linear-gradient(rgb(152, 166, 212), #376996);
+    color: #2a150d;
+}
+
+section.life {
+    background-image: linear-gradient(#376996, #1f487e);
 }
 
 section.future .text-container {
     height: calc(100% - 218px);
-    padding: 64px;
+    max-width: 800px;
+    padding: 16px 0;
+    margin: 0 auto;
     line-height: 2em;
     font-size: 1.25em;
+}
+
+.album {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.life .album {
+    margin: 24px auto;
+    max-width: 800px;
+}
+
+.album .photo {
+    width: calc(50% - 4px);
+    margin-bottom: 8px;
+}
+.album .photo img {
+    max-width: 100%;
+}
+
+.album .photo:nth-child(2n + 1) {
+    margin-right: 8px;
 }

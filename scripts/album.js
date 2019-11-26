@@ -1,7 +1,13 @@
 (function(album) {
-    class Album {
+    class Album extends modal.Modal {
         constructor(images) {
-            modal.Modal(`<div class="album"></div>`);
+            super(`
+                <div class="album">
+
+                </div>
+            `);
+
+            // preload images
         }
     }
 

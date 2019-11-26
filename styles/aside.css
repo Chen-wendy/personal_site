@@ -9,13 +9,40 @@
 .facebook.social-item:hover i {
     color: #4267b2 !important;
 }
-
 .instagram.social-item:hover i {
     color: #833ab4 !important;
 }
+
 .mail.social-item:hover i {
     color: #db4437 !important;
 }
+
+.social-item {
+    position: relative;
+}
+.social-item .overlay {
+    display: none;
+    position: absolute;
+    right: 32px;
+    background-image: linear-gradient(
+        to left,
+        transparent 0%,
+        transparent 16px,
+        rgba(152, 193, 217, 0.35) 16px,
+        rgba(152, 193, 217, 0.35) 100%
+    );
+    padding: 16px 32px;
+    border-radius: 8px 0 0 8px;
+    margin-top: -44px;
+    height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.social-item:hover .overlay,
+.overlay:hover {
+    display: block;
+}
+
 .phone.social-item:hover i {
     color: #fad7bd !important;
 }

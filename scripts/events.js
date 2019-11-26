@@ -4,6 +4,7 @@ document
         const modalInst = new modal.Modal(
             `<div id="address-map" style="width: 40vw; height: 37.5vw;"></div>`
         );
+        modalInst.attach();
 
         const accessToken = `pk.eyJ1IjoiaHN1cGVuZ2p1biIsImEiOiJjazNmbHQ0M3YwNmF2M2RwNm4yc2FzMTZiIn0.R7HJViTXUh4pD8HjLxh35A`;
         const map = L.map("address-map", {

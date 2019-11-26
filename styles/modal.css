@@ -14,3 +14,11 @@
 
     background-color: rgba(0, 0, 0, 0.1);
 }
+
+.modal-container:empty {
+    display: none;
+}
+
+.modal-container > .modal:not(:last-child) {
+    display: none;
+}
