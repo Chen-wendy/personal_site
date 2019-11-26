@@ -23,7 +23,7 @@ document
             }
         ).addTo(map);
 
-        var popup = L.popup({
+        L.popup({
             keepInView: true,
             closeButton: false
         })
