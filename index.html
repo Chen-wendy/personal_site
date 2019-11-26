@@ -4,16 +4,33 @@
         <title>陳秋樺個人網站</title>
         <meta charset="utf-8" />
 
-        <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="styles/main.css" />
-        <link rel="stylesheet" href="styles/content.css" />
-        <link rel="stylesheet" href="styles/aside.css" />
-        <link rel="stylesheet" href="styles/backgrounds.css" />
-        <link rel="stylesheet" href="styles/fonts.css" />
+        <link rel="stylesheet" href="/styles/reset.css" />
+        <link rel="stylesheet" href="/styles/main.css" />
+        <link rel="stylesheet" href="/styles/content.css" />
+        <link rel="stylesheet" href="/styles/aside.css" />
+        <link rel="stylesheet" href="/styles/backgrounds.css" />
+        <link rel="stylesheet" href="/styles/modal.css" />
+        <link rel="stylesheet" href="/styles/album.css" />
+        <link rel="stylesheet" href="/styles/fonts.css" />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+            integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+            crossorigin=""
+        />
+
         <script
             src="https://kit.fontawesome.com/0adb492c12.js"
             crossorigin="anonymous"
         ></script>
+        <script
+            src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""
+        ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.2/web-animations.min.js"></script>
+        <script src="/scripts/modal.js"></script>
+        <script src="/scripts/album.js"></script>
     </head>
 
     <body>
@@ -24,7 +41,6 @@
                     <li><a href="#profile">個人資料</a></li>
                     <li><a href="#interest">興趣</a></li>
                     <li><a href="#experience">經歷</a></li>
-                    <!-- <li><a href="#life">生活</a></li> -->
                     <li><a href="#future">未來</a></li>
                 </menu>
             </nav>
@@ -340,12 +356,11 @@
                     ></a>
                 </li>
                 <li class="map social-item">
-                    <a
-                        href="https://www.google.com/maps/place/中原大學/@24.957537,121.2388275,17z/data=!3m1!4b1!4m5!3m4!1s0x3468221447a0f021:0x2b86d2650bb8bcff!8m2!3d24.957537!4d121.2410215"
-                        ><i class="fas fa-fw fa-map-marked"></i
-                    ></a>
+                    <a><i class="fas fa-fw fa-map-marked"></i></a>
                 </li>
             </ul>
         </aside>
+
+        <script src="/scripts/events.js"></script>
     </body>
 </html>
